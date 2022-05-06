@@ -6,9 +6,10 @@ Console.WriteLine(@"----------MENU-DE-EXERCICÍOS-WHILE------------
 2-Exercicio02
 3-Exercicio03
 4-Exercicio04
-5-Exercicio05");
+5-Exercicio05
+6-Exercicio06");
 
-Console.Write("Digite a oção desejada: ");
+Console.Write("Digite a opção desejada: ");
 int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
 if (opcaoDesejada == 1)
