@@ -14,6 +14,9 @@ namespace Entra21.ExerciciosWhile
             int quantidadeProdutos = 0;
             double valorProduto = 0;
             double somaValorProduto = 0;
+            double somaValorQuantidadeProduto = 0;
+            double valorDesconto = 0;
+            double valorFinal = 0;
 
             while (nomeProduto != "sair")
             {
@@ -27,8 +30,11 @@ namespace Entra21.ExerciciosWhile
                 quantidadeProdutos = Convert.ToInt32(Console.ReadLine());
 
                 somaValorProduto = somaValorProduto + valorProduto;
+                somaValorQuantidadeProduto = somaValorProduto * quantidadeProdutos;
+                valorDesconto = somaValorQuantidadeProduto * 0.05;
+                valorFinal = somaValorQuantidadeProduto - valorDesconto;
 
-                
+                Console.WriteLine("O valor foi de: " + valorFinal);
             }
         }
     }
