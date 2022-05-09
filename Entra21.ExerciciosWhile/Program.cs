@@ -9,7 +9,8 @@ Console.WriteLine(@"----------MENU-DE-EXERCICÍOS-WHILE------------
 5-Exercicio05
 6-Exercicio06
 7-Exercicio07
-8-Exercicio08");
+8-Exercicio08
+11-Exercicio11");
 
 Console.Write("Digite a opção desejada: ");
 int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
@@ -53,4 +54,9 @@ else if (opcaoDesejada == 8)
 {
     Exercicio08 exercicio08 = new Exercicio08();
     exercicio08.Executar();
+}
+else if(opcaoDesejada == 11)
+{
+    Exercicio11 exercicio11 = new Exercicio11();
+    exercicio11.Executar();
 }
