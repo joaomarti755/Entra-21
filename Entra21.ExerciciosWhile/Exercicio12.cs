@@ -11,6 +11,11 @@ namespace Entra21.ExerciciosWhile
         public void Executar()
         {
 			int codigoProduto = 0;
+			int quantidadeProdutosConsumidos = 0;
+			int quantidadeBolos = 0;
+			int quantidadeDoces = 0;
+			int quantidadeSanduiches = 0;
+			int quantidadePizza = 0;
 
 			while (codigoProduto != 16)
             {
@@ -50,6 +55,25 @@ namespace Entra21.ExerciciosWhile
 
 				Console.Write("Digite o código do produto: ");
 				codigoProduto = Convert.ToInt32(Console.ReadLine());
+
+				quantidadeProdutosConsumidos = quantidadeProdutosConsumidos + 1;
+
+				if((codigoProduto == 1) || (codigoProduto == 2) || (codigoProduto == 3) || (codigoProduto == 4) || (codigoProduto == 5))
+                {
+					quantidadeBolos = quantidadeBolos + 1;
+                }
+				else if((codigoProduto == 6) || (codigoProduto == 7))
+                {
+					quantidadeDoces = quantidadeDoces + 1;
+                }
+				else if((codigoProduto == 8) || (codigoProduto == 9) || (codigoProduto == 10) || (codigoProduto == 11))
+                {
+					quantidadeSanduiches = quantidadeSanduiches + 1;
+                }
+				else if((codigoProduto == 12) || (codigoProduto == 13) || (codigoProduto == 14) || (codigoProduto == 15))
+                {
+					quantidadePizza = quantidadePizza + 1;
+                }
 
             }
 		}
