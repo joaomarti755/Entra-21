@@ -29,13 +29,11 @@ namespace Entra21.ExerciciosWhile
                 Console.Write("Digite o ano do carro: ");
                 int anoCarro = Convert.ToInt32(Console.ReadLine());
 
-                string letraInicialCarro = modeloCarro.Substring(0, 1);
-
-                if(letraInicialCarro == "a")
+                if(modeloCarro.StartsWith("a"))
                 {
                     carrosComLetraA = carrosComLetraA + 1;
                 }
-                else if(letraInicialCarro == "g")
+                else if(modeloCarro.StartsWith("g"))
                 {
                     carrosComLetraG = carrosComLetraG + 1;
                 }
