@@ -34,7 +34,7 @@ namespace Entra21.ExercicioForEtry
                     }
                     catch(Exception ex)
                     {
-
+                        Console.WriteLine("Valor digitado é invalido");
                     }
                 }
             }

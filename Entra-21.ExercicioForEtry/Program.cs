@@ -10,5 +10,5 @@ var opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 if(opcaoDesejada == 1)
 {
     var exercicio01 = new Exercicio01();
-
+    exercicio01.Executar();
 }
