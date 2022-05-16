@@ -25,7 +25,6 @@ namespace Entra21.ExercicioForEtry
                         if(precoPeca < 0)
                         {
                             Console.WriteLine("Valor digitado é invalido");
-                            valorValido = false;
                         }
                         else
                         {

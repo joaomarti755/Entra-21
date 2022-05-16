@@ -24,7 +24,7 @@ namespace Entra21.ExerciciosWhile
                 string modeloCarro = Console.ReadLine().ToLower().Trim();
 
                 Console.Write("Digite o valor do carro: ");
-                double valorCarro = Convert.ToDouble(Console.ReadLine());
+                double valorCarro = Convert.ToDouble(Console.ReadLine());   
 
                 Console.Write("Digite o ano do carro: ");
                 int anoCarro = Convert.ToInt32(Console.ReadLine());
