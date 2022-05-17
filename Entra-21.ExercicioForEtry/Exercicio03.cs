@@ -10,8 +10,21 @@ namespace Entra21.ExercicioForEtry
     {
         public void Executar()
         {
-            Console.Write("Digite um numero: ");
-            var numero = Convert.ToInt32(Console.ReadLine());
+            var valorValido = false;
+            var numero = 0;
+            while (valorValido == false)
+            {
+                try
+                {
+                    Console.Write("Digite um numero: ");
+                    numero = Convert.ToInt32(Console.ReadLine());
+                    if()
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Valor invalido");
+                }
+            }
             var numeroTabuada = 0;
             var textoTabuada = "";
             for(var i = 0; i < 1000; i++)
