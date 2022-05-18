@@ -67,6 +67,7 @@ namespace Entra_21.ExercicioForEtry
                     }
                 }
             }
+
             Console.WriteLine("Número: " + numero);
             Console.WriteLine("Números sucessores: " + textoNumerosDepois);
             Console.WriteLine("Números antecessor: " + textoNumerosAntes);
