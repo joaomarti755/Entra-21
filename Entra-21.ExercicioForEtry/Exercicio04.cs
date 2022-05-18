@@ -24,7 +24,11 @@ namespace Entra_21.ExercicioForEtry
                     numero = Convert.ToInt32(Console.ReadLine());
                     if((numero == 0) || (numero != 0))
                     {
-
+                        valorValido = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número invalido");
                     }
                 }
                 catch (Exception ex)
@@ -34,6 +38,7 @@ namespace Entra_21.ExercicioForEtry
             }
             for(var i = 0; i < 50; i++)
             {
+                ++numeroDepois;
                 valorValido = false;
                 while(valorValido == false)
                 {
@@ -47,8 +52,24 @@ namespace Entra_21.ExercicioForEtry
                         ++numeroDepois;
                     }
                 }
-                ++numeroDepois;
+                valorValido = false;
+                --numeroAntes;
+                while(valorValido == false)
+                {
+                    if(numeroAntes % 2 == 0)
+                    {
+                        textoNumerosAntes = textoNumerosAntes + numeroAntes + "\n";
+                        valorValido = true;
+                    }
+                    else
+                    {
+                        --numeroAntes;
+                    }
+                }
             }
+            Console.WriteLine("Número: " + numero);
+            Console.WriteLine("Números sucessores: " + textoNumerosDepois);
+            Console.WriteLine("Números antecessor: " + textoNumerosAntes);
         }
     }
 }
