@@ -18,6 +18,7 @@ namespace Entra21.ExercicioForEtry
                 {
                     Console.Write("Digite um numero: ");
                     numero = Convert.ToInt32(Console.ReadLine());
+                    valorValido = true;
                 }
                 catch(Exception ex)
                 {
