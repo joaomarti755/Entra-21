@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entra_21.ExercicioForEtry
+namespace Entra21.ExercicioForEtry
 {
     internal class Exercicio05
     {
