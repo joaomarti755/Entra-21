@@ -14,11 +14,13 @@ namespace Entra21.ExerciciosVetores
             double soma = 0;
             Console.Write("Digite o nome: ");
             string nome = Console.ReadLine().Trim();
-            for(var i = 0; i < 4; i++)
+            for(var i = 0; i < notas.Length; i++)
             {
                 Console.Write("Digite a nota: ");
                 notas[i] = Convert.ToDouble(Console.ReadLine());
-
+            }
+            for(var i = 0; i < notas.Length; i++)
+            {
                 soma = soma + notas[i];
             }
             double media = soma / 4;

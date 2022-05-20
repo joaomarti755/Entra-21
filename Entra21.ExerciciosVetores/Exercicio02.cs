@@ -11,7 +11,7 @@ namespace Entra21.ExerciciosVetores
         public void Executar()
         {
             string[] nomes = new string[10];
-            for(var i = 0; i < 10; i++)
+            for(var i = 0; i < nomes.Length; i++)
             {
                 Console.Write("Digite um nome: ");
                 nomes[i] = Console.ReadLine().Trim();

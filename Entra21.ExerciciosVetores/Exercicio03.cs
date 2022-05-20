@@ -13,7 +13,7 @@ namespace Entra21.ExerciciosVetores
             string[] nomesProdutos = new string[7];
             double[] valoresProdutos = new double[7];
             
-            for(var i = 0; i < 7; i++)
+            for(var i = 0; i < nomesProdutos.Length; i++)
             {
                 Console.Write("Digite o nome do produto: ");
                 nomesProdutos[i] = Console.ReadLine().Trim();

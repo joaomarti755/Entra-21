@@ -12,11 +12,13 @@ namespace Entra21.ExerciciosVetores
         {
             double[] pesos = new double[5];
             double somaPeso = 0;
-            for(var i = 0; i < 5; i++)
+            for(var i = 0; i < pesos.Length; i++)
             {
                 Console.Write("Digite o peso: ");
                 pesos[i] = Convert.ToDouble(Console.ReadLine());
-
+            }
+            for(var i = 0; i < pesos.Length; i++)
+            {
                 somaPeso = somaPeso + pesos[i];
             }
             double mediaPeso = somaPeso / 4;

@@ -14,7 +14,7 @@ namespace Entra21.ExerciciosVetores
             double[] alturasAnimais = new double[4];
             string animalMenorAltura = "";
             double menorAltura = double.MaxValue;
-            for(var i = 0; i < 4; i++)
+            for(var i = 0; i < animais.Length; i++)
             {
                 Console.Write("Digite o nome do animal: ");
                 animais[i] = Console.ReadLine().Trim();
