@@ -12,6 +12,9 @@ namespace Entra21.ExerciciosVetores
         public void Executar()
         {
             var table = new ConsoleTable("one", "two", "three");
+
+            table.Configure(x => x.EnableCount = false);
+
             table.AddRow(1, 2, 3)
                  .AddRow("this line should be longer", "yes it is", "oh");
 
