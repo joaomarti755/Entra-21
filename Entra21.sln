@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExercicioForEtry", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosVetores", "Entra21.ExerciciosVetores\Entra21.ExerciciosVetores.csproj", "{B969C3DB-AA38-41AD-ADDD-B32CA9F76C0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExerciciosComplementaresDeVetor", "Entra21.ExerciciosComplementaresDeVetor\Entra21.ExerciciosComplementaresDeVetor.csproj", "{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosComplementaresDeVetor", "Entra21.ExerciciosComplementaresDeVetor\Entra21.ExerciciosComplementaresDeVetor.csproj", "{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploOrientacaoObjeto", "Entra21.ExemploOrientacaoObjeto\Entra21.ExemploOrientacaoObjeto.csproj", "{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploOrientacaoObjeto.Tests", "Entra21.ExemploOrientacaoObjeto.Tests\Entra21.ExemploOrientacaoObjeto.Tests.csproj", "{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
