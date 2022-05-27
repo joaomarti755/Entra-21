@@ -19,7 +19,7 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio01
 
         public string TituloComAutor()
         {
-            var tituloAutor = Titulo + "" + Autor;
+            var tituloAutor = Titulo + " de: " + Autor;
 
             return tituloAutor;
         }
@@ -33,7 +33,9 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio01
 
         public int QuantidadePaginasLidasNoTotal()
         {
-            var
+            var paginasLidasNoTotal = QuantidadePaginasLidas * QuantidadeReleitura;
+
+            return paginasLidasNoTotal;
         }
     }
 }
