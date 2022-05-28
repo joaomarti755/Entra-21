@@ -8,8 +8,8 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio02
 {
     internal class Temperatura
     {
-        public double TemperaturaOrigem;
-        public double TemperaturaDestino;
+        public string TemperaturaOrigem;
+        public string TemperaturaDestino;
         public double TemperaturaValor;
 
         public double CalculoCelsiusParaKelvin()
@@ -21,9 +21,9 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio02
         
         public double CalculoCelsiusParaFahrenheit()
         {
-            var calcularCelasiusParaFahrenheit = (TemperaturaValor * 9 / 5) + 32;
+            var calcularCelsiusParaFahrenheit = (TemperaturaValor * 9 / 5) + 32;
 
-            return calcularCelasiusParaFahrenheit;
+            return calcularCelsiusParaFahrenheit;
         }
 
         public double CalculoKelvinParaCelsius()
@@ -42,7 +42,16 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio02
 
         public double CalculoFahrenheitParaCelsius()
         {
-            var calcularFahrenheitParaCelsius = (TemperaturaValor - 32)
+            var calcularFahrenheitParaCelsius = (TemperaturaValor - 32) * 5 / 9;
+
+            return calcularFahrenheitParaCelsius;
+        }
+
+        public double CalculoFahrenheitParaKelvin()
+        {
+            var calcularFahrenheitParaKelvin = (TemperaturaValor - 32) * 5 / 9 + 273.15;
+
+            return calcularFahrenheitParaKelvin;
         }
 
     }

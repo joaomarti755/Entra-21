@@ -1,7 +1,9 @@
 ﻿using Entra21.ExerciciosOrientacaoObjeto.Exercicio01;
+using Entra21.ExerciciosOrientacaoObjeto.Exercicio02;
 
 Console.WriteLine(@"------------MENU-----------
-1-Exercicio01");
+1-Exercicio01
+2-Exercicio02");
 var opcaoDesejada = 0;
 var opcaoValida = false;
 
@@ -31,4 +33,9 @@ if(opcaoDesejada == 1)
 {
     var exercicio01 = new ExemploLivro();
     exercicio01.Executar();
+}
+else if(opcaoDesejada == 2)
+{
+    var exercicio02 = new ExemploTemperatura();
+    exercicio02.Executar();
 }
