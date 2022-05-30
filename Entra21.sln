@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosVetores",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosComplementaresDeVetor", "Entra21.ExerciciosComplementaresDeVetor\Entra21.ExerciciosComplementaresDeVetor.csproj", "{7945304F-DAD5-4B8E-A5F5-54CF355FBFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploOrientacaoObjeto", "Entra21.ExemploOrientacaoObjeto\Entra21.ExemploOrientacaoObjeto.csproj", "{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploOrientacaoObjeto", "Entra21.ExemploOrientacaoObjeto\Entra21.ExemploOrientacaoObjeto.csproj", "{C6A86E10-032A-4B1F-B1D3-F75D3BA40725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploOrientacaoObjeto.Tests", "Entra21.ExemploOrientacaoObjeto.Tests\Entra21.ExemploOrientacaoObjeto.Tests.csproj", "{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploOrientacaoObjeto.Tests", "Entra21.ExemploOrientacaoObjeto.Tests\Entra21.ExemploOrientacaoObjeto.Tests.csproj", "{DE527DBC-E6E1-4CE5-B9D0-8EF803B70019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExerciciosOrientacaoObjeto", "Entra21.ExerciciosOrientaçãoObjeto\Entra21.ExerciciosOrientacaoObjeto.csproj", "{D59548C2-A567-4899-B7DD-0AE3C1B4C8F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosOrientacaoObjeto", "Entra21.ExerciciosOrientaçãoObjeto\Entra21.ExerciciosOrientacaoObjeto.csproj", "{D59548C2-A567-4899-B7DD-0AE3C1B4C8F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExerciciosOrientacaoObjeto.Tests", "Entra21.ExerciciosOrientacaoObjeto.Tests\Entra21.ExerciciosOrientacaoObjeto.Tests.csproj", "{9A3C95A6-E387-4509-9D13-F2EA37527A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D59548C2-A567-4899-B7DD-0AE3C1B4C8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D59548C2-A567-4899-B7DD-0AE3C1B4C8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D59548C2-A567-4899-B7DD-0AE3C1B4C8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3C95A6-E387-4509-9D13-F2EA37527A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3C95A6-E387-4509-9D13-F2EA37527A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3C95A6-E387-4509-9D13-F2EA37527A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3C95A6-E387-4509-9D13-F2EA37527A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
