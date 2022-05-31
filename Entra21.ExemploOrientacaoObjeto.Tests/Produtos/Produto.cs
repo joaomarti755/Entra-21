@@ -9,11 +9,11 @@ using Xunit;
 
 namespace Entra21.ExemploOrientacaoObjeto.Tests.Produtos
 {
-    public class ProdutoTests
-    {
+    public class ProdutoTests   
+    {   
         [Fact]
         public void Validar_EhVencido_DataVencimento_Menor_Hoje()
-        {
+        {   
             // Arrange (preparar os dados)
             var produto = new Produto();
             produto.DataVencimento = new DateTime(2022, 05, 04);

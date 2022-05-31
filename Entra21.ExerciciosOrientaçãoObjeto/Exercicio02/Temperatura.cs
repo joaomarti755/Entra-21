@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio02
 {
-    internal class Temperatura
+    public class Temperatura
     {
         public string TemperaturaOrigem;
         public string TemperaturaDestino;
@@ -17,7 +17,7 @@ namespace Entra21.ExerciciosOrientacaoObjeto.Exercicio02
             var calcularCelsiusParaKelvin = TemperaturaValor + 273.15;
 
             return calcularCelsiusParaKelvin;
-        }
+        }   
         
         public double CalculoCelsiusParaFahrenheit()
         {
