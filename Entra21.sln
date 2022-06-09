@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosOrientaca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExerciciosOrientacaoObjeto.Tests", "Entra21.ExerciciosOrientacaoObjeto.Tests\Entra21.ExerciciosOrientacaoObjeto.Tests.csproj", "{9A3C95A6-E387-4509-9D13-F2EA37527A57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExercicioListas", "Entra21.ExercicioListas\Entra21.ExercicioListas.csproj", "{6577ACA7-223C-4781-80D4-3FEC97FC774E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExercicioListas", "Entra21.ExercicioListas\Entra21.ExercicioListas.csproj", "{6577ACA7-223C-4781-80D4-3FEC97FC774E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemploListaObjeto", "Entra21.ExemploListaObjeto\Entra21.ExemploListaObjeto.csproj", "{2E554F7D-F074-4B0D-BAE8-11C1A076CAB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{6577ACA7-223C-4781-80D4-3FEC97FC774E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6577ACA7-223C-4781-80D4-3FEC97FC774E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6577ACA7-223C-4781-80D4-3FEC97FC774E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E554F7D-F074-4B0D-BAE8-11C1A076CAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E554F7D-F074-4B0D-BAE8-11C1A076CAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E554F7D-F074-4B0D-BAE8-11C1A076CAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E554F7D-F074-4B0D-BAE8-11C1A076CAB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
