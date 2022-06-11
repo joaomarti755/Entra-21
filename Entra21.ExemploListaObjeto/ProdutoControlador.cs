@@ -139,7 +139,7 @@ Total: {produto.CalcularPrecoTotal()}");
 6 - Sair");
 
             int codigo = SolicitarCodigo();
-            return codigo;
+            return codigo;  
         }
 
         private int SolicitarCodigo()
@@ -211,7 +211,7 @@ Total: {produto.CalcularPrecoTotal()}");
                 return;
             }
 
-            Console.WriteLine("Listae Produtos");
+            Console.WriteLine("Listas Produtos");
 
             for(var i = 0; i < produtos.Count; i++)
             {
