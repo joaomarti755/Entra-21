@@ -14,6 +14,8 @@
 
             int codigoAtual = 1;
 
+            
+
             if(triangulo.ValidarTriangulo() == true)
             {
 
@@ -21,7 +23,7 @@
 
             codigoAtual = codigoAtual + 1;
 
-            triangulos.Add(triangulo);  
+            triangulos.Add(triangulo);
 
                 return true;
             }
@@ -31,7 +33,7 @@
             }
 
         }
-        public bool Editar(int codigoParaAlterar, int codigo, int lado1, int lado2, int lado3)
+        public bool Editar(int codigoParaAlterar, int lado1, int lado2, int lado3)
         {
             Triangulo trianguloParaAlterar = ObterPorCodigo(codigoParaAlterar);
 

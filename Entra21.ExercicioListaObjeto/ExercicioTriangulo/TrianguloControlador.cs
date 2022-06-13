@@ -24,7 +24,7 @@ namespace Entra21.ExercicioListaObjeto
 
                 if (codigo == 1)
                 {
-                    ApresentarTrinangulo();
+                    ApresentarTriangulos();
                 }
                 else if(codigo == 2)
                 {
@@ -73,7 +73,7 @@ Lado3: {triangulo.Lado3}");
 
         private void Apagar()
         {
-            ApresentarTrinangulo();
+            ApresentarTriangulos();
 
             Console.Write("Digite o código do triangulo que deseja apagar");
             int codigo = Convert.ToInt32(Console.ReadLine());
@@ -87,7 +87,7 @@ Lado3: {triangulo.Lado3}");
 
         private void Editar()
         {
-            ApresentarTrinangulo();
+            ApresentarTriangulos();
 
             Console.Write("Código do triangulo desejado: ");
             var codigo = Convert.ToInt32(Console.ReadLine());
@@ -100,8 +100,8 @@ Lado3: {triangulo.Lado3}");
 
             Console.Write("Lado3: ");
             var lado3 = Convert.ToInt32(Console.ReadLine());
-
-            var alterou = trianguloServico.Editar(codigo, lado1, lado2, lado3); ;
+                
+            var alterou = trianguloServico.Editar(codigo, lado1, lado2, lado3);
 
             if( alterou == false)
             {
