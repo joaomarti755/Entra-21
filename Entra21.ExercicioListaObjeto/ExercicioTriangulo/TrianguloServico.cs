@@ -17,7 +17,7 @@
             
 
             if(triangulo.ValidarTriangulo() == true)
-            {
+            {  
 
             triangulo.Codigo = codigoAtual;
 
