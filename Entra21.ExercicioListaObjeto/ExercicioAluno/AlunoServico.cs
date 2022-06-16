@@ -127,6 +127,44 @@ namespace Entra21.ExercicioListaObjeto.ExercicioAluno
             return Aprovados;
         }
 
+        public List<string> Reprovados()
+        {
+            Aluno aluno = new Aluno();
+
+            var Reprovados = new List<string>();
+
+            for (var i = 0; i < alunos.Count; i++)
+            {
+                var alunoAtual = alunos[i];
+
+                if (aluno.ObterStatus() == AlunoStatus.Reprovado)
+                {
+                    Reprovados.Add(alunoAtual.Nome);
+                }
+            }
+
+            return Reprovados;
+        }
+
+        public List<string> EmExame()
+        {
+            Aluno aluno = new Aluno();
+
+            var EmExame = new List<string>();
+
+            for (var i = 0; i < alunos.Count; i++)
+            {
+                var alunoAtual = alunos[i];
+
+                if (aluno.ObterStatus() == AlunoStatus.EmExame)
+                {
+                    EmExame.Add(alunoAtual.Nome);
+                }
+            }
+
+            return EmExame;
+        }
+
         public Aluno ObterPorCodigo(int codigoMatricula)
         {
             for(var i = 0; i < alunos.Count; i++)
