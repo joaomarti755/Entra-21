@@ -165,6 +165,61 @@ namespace Entra21.ExercicioListaObjeto.ExercicioAluno
             return EmExame;
         }
 
+        public double ObterMediaPorCodigoMatricula(int codigoMatricula)
+        {
+            var mediaAlunoAtual = 0.0;
+
+            for(var i = 0; i < alunos.Count; i++)
+            {
+                var alunoAtual = alunos[i];
+
+                if (alunoAtual.CodigoMatricula == codigoMatricula)
+                {
+                    mediaAlunoAtual = alunoAtual.CalcularMedia();
+                }
+            }
+
+            return mediaAlunoAtual;
+        }
+
+        //public AlunoStatus ObterSatusPorCodigoMatricula(int codigoMatricula)
+        //{
+        //    Aluno aluno = new Aluno();
+
+        //    var statusAlunoAtual = ;
+
+        //    for (var i = 0; i < alunos.Count; i++)
+        //    {
+        //        var alunoAtual = alunos[i];
+
+        //        if (alunoAtual.CodigoMatricula == codigoMatricula)
+        //        {
+        //            statusAlunoAtual = aluno.ObterStatus();
+        //        }
+        //    }
+
+        //    return statusAlunoAtual;
+        //}
+
+        public double ObterMediaIdade()
+        {
+            var mediaIdade = 0.0;
+            var somaIdade = 0;
+
+            for (var i = 0; i < alunos.Count; i++)
+            {
+                var idade = 0;
+                var aluno = alunos[i];
+
+                idade = aluno.Idade;
+
+                somaIdade = somaIdade + idade;
+            }
+            mediaIdade = somaIdade / alunos.Count;
+
+            return mediaIdade;
+        }
+
         public Aluno ObterPorCodigo(int codigoMatricula)
         {
             for(var i = 0; i < alunos.Count; i++)
