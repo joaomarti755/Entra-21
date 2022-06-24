@@ -1,24 +1,27 @@
-﻿using Entra21.ExemplosWindowsForms.Exemplo01;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entra21.ExemplosWindowsForms
+namespace Entra21.ExemplosWindowsForms.Exemplo01
 {
     internal class EnderecoServico
     {
+        //http://www.invertexto.com/fsens
+
         private List<Endereco> enderecos;
 
-        // Construtor:  mais para frente
+        // Construtor: mais pra frente
         public EnderecoServico()
         {
             enderecos = new List<Endereco>();
+
+            LerArquivo();
         }
 
-        //Método Adicionar recebe como parâmetro o objeto do endereço completo do Form(Controller)
+        // Método Adicionar recebe como parâmetro o objeto do endereço completo do Form(Controller)
         public void Adicionar(Endereco endereco)
         {
             enderecos.Add(endereco);
@@ -28,10 +31,10 @@ namespace Entra21.ExemplosWindowsForms
 
         public void Editar(Endereco enderecoParaAlterar)
         {
-            // Percorre a lista de endereços afim de encontrar o enderelço que deve ser alterado
-            for (int i = 0; i < enderecos.Count; i++)
+            // Percorre a lista de endereços afim de encontrar o endereço que deve ser alterado
+            for (var i = 0; i < enderecos.Count; i++)
             {
-                // Obtém o endereço da lista de endereços
+                // Obtem o endereço da lista de endereços
                 var endereco = enderecos[i];
 
                 // Verifica se o código do endereço percorrido é o mesmo do endereço que deve ser alterado
@@ -48,14 +51,17 @@ namespace Entra21.ExemplosWindowsForms
                 }
             }
         }
-        public void Apagar(int codigoParaApagar)
+
+        public void Apagar(Endereco enderecoParaApagar)
         {
-            for (int i = 0; i < enderecos.Count; i++)
+            // Percorre a lista de endereços afim de encontrar o endereço que deve ser removido
+            for (var i = 0; i < enderecos.Count; i++)
             {
-                //Obtem o endereço percorrido
+                // Obtem o endereço que esta sendo percorrido
                 var endereco = enderecos[i];
 
-                if (endereco.Codigo == codigoParaApagar)
+                // Verifica se o código do endereço percorrido é o mesmo do endereço que deve ser alterado
+                if (endereco.Codigo == enderecoParaApagar.Codigo)
                 {
                     // Remove o endereço encontrado da lista de endereços
                     enderecos.Remove(endereco);
@@ -67,46 +73,57 @@ namespace Entra21.ExemplosWindowsForms
             }
         }
 
-        // Método que permite lista todos os endereços
+        // Método que permite listar todos os endereços
         public List<Endereco> ObterTodos()
         {
             return enderecos;
         }
 
-        public Endereco ObtemPorCodigo(int codigo)
+        public Endereco ObterPorCodigo(int codigo)
         {
-            //Percorre a lista de endereços afim de encontrar o endereço com o código desejado
-            for (int i = 0; i < enderecos.Count; i++)
+            // Percorre a lista de endereços afim de encontrar o endereço com o código desejado
+            for (var i = 0; i < enderecos.Count; i++)
             {
-                // Obtém o endereço percorrido
+                // Obtem o endereço que esta sendo percorrido
                 var endereco = enderecos[i];
 
-                // Verifica se o endereço contém o códifo desejado
+                // Verifica se o endereço contém o código desejado
                 if (endereco.Codigo == codigo)
-                {
                     return endereco;
-                }
-
-                // Retorna null pois não encontrou o endereço com o códifo desejado
             }
+
+            // Retorna null pois não encontrou o endereço com o código desejado
             return null;
+        }
+
+        public int ObterUltimoCodigo()
+        {
+            int ultimoCodigo = 0;
+
+            for(int i = 0; i < enderecos.Count; i++)
+            {
+                var endereco = enderecos[i];
+
+                ultimoCodigo = endereco.Codigo;
+            }
+            return ultimoCodigo;
         }
 
         public void SalvarArquivo()
         {
             var enderecosEmJson = JsonConvert.SerializeObject(enderecos);
-            File.WriteAllText("endereco.json", enderecosEmJson);
+            File.WriteAllText("enderecos.json", enderecosEmJson);
         }
 
         public void LerArquivo()
         {
-            // Verificar se o endereço não existe
+            // Verifica se o endereço não existe
             if (File.Exists("enderecos.json") == false)
                 return;
+
             // Ler o arquivo JSON e converte para uma lista de objetos de endereços
-            var enderecosEmJson = File.ReadAllText("endereco.json");
-            enderecos = JsonConvert.DeserializeObject<List<Endereco>>(enderecosEmJson);
+            var enderecoEmJson = File.ReadAllText("enderecos.json");
+            enderecos = JsonConvert.DeserializeObject<List<Endereco>>(enderecoEmJson);
         }
     }
 }
-

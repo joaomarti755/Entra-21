@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonApagar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonApagar = new System.Windows.Forms.Button();
             this.labelNome = new System.Windows.Forms.Label();
-            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelAltura = new System.Windows.Forms.Label();
-            this.textBoxAltura = new System.Windows.Forms.TextBox();
             this.labelPeso = new System.Windows.Forms.Label();
-            this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.labelImc = new System.Windows.Forms.Label();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.textBoxAltura = new System.Windows.Forms.TextBox();
+            this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,98 +47,99 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonApagar
-            // 
-            this.buttonApagar.Location = new System.Drawing.Point(395, 8);
-            this.buttonApagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonApagar.Name = "buttonApagar";
-            this.buttonApagar.Size = new System.Drawing.Size(87, 27);
-            this.buttonApagar.TabIndex = 0;
-            this.buttonApagar.Text = "Apagar";
-            this.buttonApagar.UseVisualStyleBackColor = true;
-            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
-            // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(294, 8);
-            this.buttonEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEditar.Location = new System.Drawing.Point(439, 35);
+            this.buttonEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(87, 27);
-            this.buttonEditar.TabIndex = 1;
+            this.buttonEditar.Size = new System.Drawing.Size(107, 38);
+            this.buttonEditar.TabIndex = 0;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
             this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
+            // buttonApagar
+            // 
+            this.buttonApagar.Location = new System.Drawing.Point(554, 35);
+            this.buttonApagar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonApagar.Name = "buttonApagar";
+            this.buttonApagar.Size = new System.Drawing.Size(107, 38);
+            this.buttonApagar.TabIndex = 1;
+            this.buttonApagar.Text = "Apagar";
+            this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
+            // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
-            this.labelNome.Location = new System.Drawing.Point(491, 40);
-            this.labelNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNome.Location = new System.Drawing.Point(683, 125);
+            this.labelNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(50, 20);
+            this.labelNome.Size = new System.Drawing.Size(61, 25);
             this.labelNome.TabIndex = 2;
             this.labelNome.Text = "Nome";
-            // 
-            // textBoxNome
-            // 
-            this.textBoxNome.Location = new System.Drawing.Point(491, 62);
-            this.textBoxNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(359, 27);
-            this.textBoxNome.TabIndex = 3;
             // 
             // labelAltura
             // 
             this.labelAltura.AutoSize = true;
-            this.labelAltura.Location = new System.Drawing.Point(491, 87);
-            this.labelAltura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAltura.Location = new System.Drawing.Point(683, 225);
+            this.labelAltura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAltura.Name = "labelAltura";
-            this.labelAltura.Size = new System.Drawing.Size(49, 20);
-            this.labelAltura.TabIndex = 4;
+            this.labelAltura.Size = new System.Drawing.Size(59, 25);
+            this.labelAltura.TabIndex = 3;
             this.labelAltura.Text = "Altura";
-            // 
-            // textBoxAltura
-            // 
-            this.textBoxAltura.Location = new System.Drawing.Point(491, 109);
-            this.textBoxAltura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxAltura.Name = "textBoxAltura";
-            this.textBoxAltura.Size = new System.Drawing.Size(358, 27);
-            this.textBoxAltura.TabIndex = 5;
             // 
             // labelPeso
             // 
             this.labelPeso.AutoSize = true;
-            this.labelPeso.Location = new System.Drawing.Point(491, 135);
-            this.labelPeso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPeso.Location = new System.Drawing.Point(683, 325);
+            this.labelPeso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPeso.Name = "labelPeso";
-            this.labelPeso.Size = new System.Drawing.Size(39, 20);
-            this.labelPeso.TabIndex = 6;
+            this.labelPeso.Size = new System.Drawing.Size(49, 25);
+            this.labelPeso.TabIndex = 4;
             this.labelPeso.Text = "Peso";
-            // 
-            // textBoxPeso
-            // 
-            this.textBoxPeso.Location = new System.Drawing.Point(491, 157);
-            this.textBoxPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxPeso.Name = "textBoxPeso";
-            this.textBoxPeso.Size = new System.Drawing.Size(358, 27);
-            this.textBoxPeso.TabIndex = 7;
             // 
             // labelImc
             // 
             this.labelImc.AutoSize = true;
-            this.labelImc.Location = new System.Drawing.Point(491, 197);
-            this.labelImc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelImc.Location = new System.Drawing.Point(683, 425);
+            this.labelImc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelImc.Name = "labelImc";
-            this.labelImc.Size = new System.Drawing.Size(38, 20);
-            this.labelImc.TabIndex = 8;
+            this.labelImc.Size = new System.Drawing.Size(48, 25);
+            this.labelImc.TabIndex = 5;
             this.labelImc.Text = "IMC:";
+            // 
+            // textBoxNome
+            // 
+            this.textBoxNome.Location = new System.Drawing.Point(683, 168);
+            this.textBoxNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(368, 31);
+            this.textBoxNome.TabIndex = 6;
+            // 
+            // textBoxAltura
+            // 
+            this.textBoxAltura.Location = new System.Drawing.Point(683, 268);
+            this.textBoxAltura.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxAltura.Name = "textBoxAltura";
+            this.textBoxAltura.Size = new System.Drawing.Size(368, 31);
+            this.textBoxAltura.TabIndex = 7;
+            // 
+            // textBoxPeso
+            // 
+            this.textBoxPeso.Location = new System.Drawing.Point(683, 368);
+            this.textBoxPeso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPeso.Name = "textBoxPeso";
+            this.textBoxPeso.Size = new System.Drawing.Size(368, 31);
+            this.textBoxPeso.TabIndex = 8;
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(648, 193);
-            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSalvar.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvar.Location = new System.Drawing.Point(900, 462);
+            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(200, 27);
+            this.buttonSalvar.Size = new System.Drawing.Size(153, 70);
             this.buttonSalvar.TabIndex = 9;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
@@ -155,77 +156,76 @@
             this.ColumnAltura,
             this.ColumnPeso,
             this.ColumnImc});
-            this.dataGridView1.Location = new System.Drawing.Point(8, 40);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 83);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 72;
-            this.dataGridView1.RowTemplate.Height = 37;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(475, 403);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 662);
             this.dataGridView1.TabIndex = 10;
             // 
             // ColumnCodigo
             // 
             this.ColumnCodigo.HeaderText = "Código";
-            this.ColumnCodigo.MinimumWidth = 9;
+            this.ColumnCodigo.MinimumWidth = 8;
             this.ColumnCodigo.Name = "ColumnCodigo";
             this.ColumnCodigo.ReadOnly = true;
-            this.ColumnCodigo.Width = 175;
+            this.ColumnCodigo.Width = 150;
             // 
             // ColumnNome
             // 
             this.ColumnNome.HeaderText = "Nome";
-            this.ColumnNome.MinimumWidth = 9;
+            this.ColumnNome.MinimumWidth = 8;
             this.ColumnNome.Name = "ColumnNome";
             this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 175;
+            this.ColumnNome.Width = 150;
             // 
             // ColumnAltura
             // 
             this.ColumnAltura.HeaderText = "Altura";
-            this.ColumnAltura.MinimumWidth = 9;
+            this.ColumnAltura.MinimumWidth = 8;
             this.ColumnAltura.Name = "ColumnAltura";
             this.ColumnAltura.ReadOnly = true;
-            this.ColumnAltura.Width = 175;
+            this.ColumnAltura.Width = 150;
             // 
             // ColumnPeso
             // 
             this.ColumnPeso.HeaderText = "Peso";
-            this.ColumnPeso.MinimumWidth = 9;
+            this.ColumnPeso.MinimumWidth = 8;
             this.ColumnPeso.Name = "ColumnPeso";
             this.ColumnPeso.ReadOnly = true;
-            this.ColumnPeso.Width = 175;
+            this.ColumnPeso.Width = 150;
             // 
             // ColumnImc
             // 
             this.ColumnImc.HeaderText = "IMC";
-            this.ColumnImc.MinimumWidth = 9;
+            this.ColumnImc.MinimumWidth = 8;
             this.ColumnImc.Name = "ColumnImc";
             this.ColumnImc.ReadOnly = true;
-            this.ColumnImc.Width = 175;
+            this.ColumnImc.Width = 150;
             // 
             // PacientesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 442);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.labelImc);
             this.Controls.Add(this.textBoxPeso);
-            this.Controls.Add(this.labelPeso);
             this.Controls.Add(this.textBoxAltura);
-            this.Controls.Add(this.labelAltura);
             this.Controls.Add(this.textBoxNome);
+            this.Controls.Add(this.labelImc);
+            this.Controls.Add(this.labelPeso);
+            this.Controls.Add(this.labelAltura);
             this.Controls.Add(this.labelNome);
-            this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonApagar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.buttonEditar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PacientesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro do Paciente";
-            this.VisibleChanged += new System.EventHandler(this.PacientesForm_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,15 +234,15 @@
 
         #endregion
 
-        private Button buttonApagar;
         private Button buttonEditar;
+        private Button buttonApagar;
         private Label labelNome;
-        private TextBox textBoxNome;
         private Label labelAltura;
-        private TextBox textBoxAltura;
         private Label labelPeso;
-        private TextBox textBoxPeso;
         private Label labelImc;
+        private TextBox textBoxNome;
+        private TextBox textBoxAltura;
+        private TextBox textBoxPeso;
         private Button buttonSalvar;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn ColumnCodigo;
