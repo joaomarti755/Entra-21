@@ -58,6 +58,8 @@ namespace Entra21.ExemplosWindowsForms.Exemplo01
             maskedTextBoxCep.Text = "";
             textBoxEnderecoCompleto.Text = "";
             comboBoxPaciente.SelectedIndex = -1;
+
+            dataGridView1.ClearSelection();
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
@@ -78,6 +80,40 @@ namespace Entra21.ExemplosWindowsForms.Exemplo01
                 return;
             }
 
+            // Verificar senão esta em de edição ou seja, modo de cadastro
+            if (dataGridView1.SelectedRows.Count == 0)
+            
+                CadastrarEndereco(cep, enderecoCompleto, nomePaciente);
+            
+            else
+                EditarEndereco(cep, enderecoCompleto, nomePaciente);
+
+            // Apresentar o registro novo do DataGridView
+            PreencherDataGridViewComEnderecos();
+
+            LimparCampos();
+        }
+
+        private void EditarEndereco(string cep, string enderecoCompleto, string nomePaciente)
+        {
+            // Obter linha selecionada
+            var linhaSelecionada = dataGridView1.SelectedRows[0];
+            // Obter código que está na coluna oculta do DataGridView
+            var codigoSelecionado = Convert.ToInt32(linhaSelecionada.Cells[0].Value);
+
+            // Construir o objeto com os dados da tela
+            var endereco = new Endereco();
+            endereco.Codigo = codigoSelecionado;
+            endereco.EnderecoCompleto = enderecoCompleto;
+            endereco.Cep = cep;
+            endereco.Paciente = pacienteServico.ObterPorNomePaciente(nomePaciente);
+
+            // Atualizar o dado na lista de endereços e salvar o dado atualizado no arquivo JSON
+            enderecoServico.Editar(endereco);
+        }
+
+        private void CadastrarEndereco(string cep, string enderecoCompleto, string? nomePaciente)
+        {
             // Construir o objeto de endereço com as variáveis
             var endereco = new Endereco();
             endereco.Codigo = enderecoServico.ObterUltimoCodigo() + 1;
@@ -87,13 +123,7 @@ namespace Entra21.ExemplosWindowsForms.Exemplo01
 
             // Salvar este endereço na lista de endereços e no arquivo JSON
             enderecoServico.Adicionar(endereco);
-
-            // Apresentar o registro novo no DataGridView
-            PreencherDataGridViewComEnderecos();
-
-            LimparCampos();
         }
-
         private void PreencherDataGridViewComEnderecos()
         {
             // Obter todos os endereços da lista de endereços
@@ -230,6 +260,44 @@ namespace Entra21.ExemplosWindowsForms.Exemplo01
 
             // Remover a seleção do DataGridView
             dataGridView1.ClearSelection();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            ApresentarDadosParaEdicao();
+        }
+
+        private void ApresentarDadosParaEdicao()
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecione um endereço para editar");
+
+                return;
+            }
+
+            // Obter a linha que o usuário selecionou
+            var linhaSelecionada = dataGridView1.SelectedRows[0];
+            // Obter p código do endereço que o usuário selecionou
+            var codigo = Convert.ToInt32(linhaSelecionada.Cells[0].Value);
+            // Obter o endereço escolhido
+            var endereco = enderecoServico.ObterPorCodigo(codigo);
+
+            // Apresentar os dados do endereço na tela para edição
+            maskedTextBoxCep.Text = endereco.Cep;
+            textBoxEnderecoCompleto.Text = endereco.EnderecoCompleto;
+            comboBoxPaciente.SelectedItem = endereco.Paciente.Nome;
+        }
+
+        //Quando o formulário é carregado apresenta os dados no DataGridView
+        private void EnderecosForm_Load(object sender, EventArgs e)
+        {
+            PreencherDataGridViewComEnderecos();
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ApresentarDadosParaEdicao();
         }
     }
 }
