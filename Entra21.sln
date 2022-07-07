@@ -27,7 +27,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemploListaObjeto"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExercicioListaObjeto", "Entra21.ExercicioListaObjeto\Entra21.ExercicioListaObjeto.csproj", "{B1FD40C8-6E11-41F4-BBFF-335034E33597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExemplosWindowsForms", "Entra21.ExemplosWindowsForms\Entra21.ExemplosWindowsForms.csproj", "{0F14A038-2F45-494A-8638-3F1DAEA7297D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemplosWindowsForms", "Entra21.ExemplosWindowsForms\Entra21.ExemplosWindowsForms.csproj", "{0F14A038-2F45-494A-8638-3F1DAEA7297D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemploSQL", "ExemploSQL", "{53870F59-574E-40B5-ABF7-DBB738787401}"
+	ProjectSection(SolutionItems) = preProject
+		\\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql = \\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
