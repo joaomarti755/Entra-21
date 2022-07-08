@@ -1,4 +1,5 @@
 ﻿CREATE TABLE enderecos(
+	id INTEGER PRIMARY KEY IDENTITY(1,1),
 	estado VARCHAR(2),
 	cidade VARCHAR(140),
 	bairro VARCHAR(120),
@@ -52,5 +53,11 @@ INSERT INTO enderecos
 	(estado, cidade, bairro, cep, logradouro, numero, complemento)
 	VALUES ('PB', 'Cabedelo', 'Camalaú', '58.103-052', 'Rua Siqueira Campos', '249', '');
 
-SELECT estado, cidade, bairro, cep, logradouro, numero, complemento
+SELECT id, estado, cidade, bairro, cep, logradouro, numero, complemento
 	FROM enderecos;
+
+UPDATE enderecos SET cidade = 'Salvador' WHERE id = 4;
+UPDATE enderecos SET logradouro = 'Rua Julio Teodoro Martins' WHERE id = 2;
+UPDATE enderecos SET cep = '35.162-484' WHERE id = 5;
+UPDATE enderecos SET logradouro = 'Rua Itu' WHERE id = 6;
+UPDATE enderecos SET cidade = 'Rio Branco', cep = '69.900-162' WHERE id = 9;
