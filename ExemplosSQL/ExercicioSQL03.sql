@@ -1,4 +1,5 @@
 ﻿CREATE TABLE champions(
+	id INTEGER PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(100),
 	descricao VARCHAR(150),
 	habilidade1 VARCHAR(100),
@@ -44,5 +45,11 @@ INSERT INTO champions
 	(nome, descricao, habilidade1, habilidade2, habilidade3, habilidade4, habilidade5)
 	VALUES ('Aatrox', ' ', 'Poço de Sangue', 'Voo Sombrio', 'Sede de Sangue / Preço em Sangue', 'Lâminas da Aflição', 'Massacre');
 
-SELECT nome, descricao, habilidade1, habilidade2, habilidade3, habilidade4, habilidade5
+SELECT id, nome, descricao, habilidade1, habilidade2, habilidade3, habilidade4, habilidade5
 	FROM champions;
+
+UPDATE champions SET descricao = 'o Imperdoável' WHERE id = 2;
+UPDATE champions SET habilidade2 = 'Ataque Alpha', habilidade3 = 'Meditar', habilidade4 = 'Estilo Wuju' habilidade5 = 'Highlander' WHERE id = 3;
+UPDATE champions SET habilidade5 = 'Fúria do Dragão' WHERE id = 5;
+UPDATE champions SET habilidade2 = 'Quebra-Cofres' WHERE id = 6;
+UPDATE champions SET descricao = 'a Espada Darkin' WHERE id = 9;
