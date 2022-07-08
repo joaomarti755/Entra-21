@@ -56,8 +56,11 @@ INSERT INTO enderecos
 SELECT id, estado, cidade, bairro, cep, logradouro, numero, complemento
 	FROM enderecos;
 
-UPDATE enderecos SET cidade = 'Salvador' WHERE id = 4;
-UPDATE enderecos SET logradouro = 'Rua Julio Teodoro Martins' WHERE id = 2;
-UPDATE enderecos SET cep = '35.162-484' WHERE id = 5;
-UPDATE enderecos SET logradouro = 'Rua Itu' WHERE id = 6;
+UPDATE enderecos SET cidade = 'Salvador', complemento = 'Apartamento' WHERE id = 4;
+UPDATE enderecos SET logradouro = 'Rua Julio Teodoro Martins', complemento = 'Casa Verde' WHERE id = 2;
+UPDATE enderecos SET cep = '35.162-484', complemento = 'Bloco A' WHERE id = 5;
+UPDATE enderecos SET logradouro = 'Rua Itu', complemento = 'Casa Azul' WHERE id = 6;
 UPDATE enderecos SET cidade = 'Rio Branco', cep = '69.900-162' WHERE id = 9;
+UPDATE enderecos SET complemento = 'Proximo ao cooper' WHERE id = 8;
+UPDATE enderecos SET complemento = 'Ao lado de um terreno baldio' WHERE id =10;
+UPDATE enderecos SET complemento = 'Em frente da farmácia São João' WHERE id =11;
