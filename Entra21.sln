@@ -31,10 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.ExemplosWindowsForm
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemploSQL", "ExemploSQL", "{53870F59-574E-40B5-ABF7-DBB738787401}"
 	ProjectSection(SolutionItems) = preProject
+		\\Server\c#-noturno\joao.martinelli\Downloads\alunos_estrutura_insert.sql = \\Server\c#-noturno\joao.martinelli\Downloads\alunos_estrutura_insert.sql
+		\\Server\c#-noturno\joao.martinelli\Downloads\cidades_estrutura_insert.sql = \\Server\c#-noturno\joao.martinelli\Downloads\cidades_estrutura_insert.sql
 		\\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql = \\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql
 		ExemplosSQL\ExercicioSQL01.sql = ExemplosSQL\ExercicioSQL01.sql
 		ExemplosSQL\ExercicioSQL02.sql = ExemplosSQL\ExercicioSQL02.sql
 		ExemplosSQL\ExercicioSQL03.sql = ExemplosSQL\ExercicioSQL03.sql
+		\\Server\c#-noturno\joao.martinelli\Downloads\pokemons_estrutura_insert.sql = \\Server\c#-noturno\joao.martinelli\Downloads\pokemons_estrutura_insert.sql
 	EndProjectSection
 EndProject
 Global
