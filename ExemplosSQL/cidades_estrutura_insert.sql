@@ -5489,3 +5489,38 @@ INSERT INTO cidades VALUES
 ('TO', 'Tupiratins'),
 ('TO', 'Wanderlândia'),
 ('TO', 'Xambioá');
+
+SELECT estado, cidade
+	FROM cidades;
+
+-- Encontrando cidades que começão com a letra A
+SELECT cidade
+	FROM cidades
+	WHERE cidade LIKE 'a%';
+
+-- Encontrando cidades que contem apar em qualquer parte do nome
+SELECT cidade
+	FROM cidades
+	WHERE cidade LIKE '%apar%';
+
+SELECT cidade
+	FROM cidades
+	WHERE cidade LIKE 'w%';
+
+-- Encontrando cidades que terminam com tuba e organizado o estado em ordem decrescente
+SELECT estado, cidade
+	FROM cidades
+	WHERE cidade LIKE '%tuba'
+	ORDER BY estado DESC;
+
+-- Encontrando cidades que contem mais que 15 caracteres e ordenado-as em ordem decrescente
+SELECT cidade
+	FROM cidades
+	WHERE
+		LEN (cidade) > 15
+	ORDER BY LEN (cidade) DESC;
+
+-- Contando quantidade de cidades no estado de SC
+SELECT COUNT(cidade) FROM cidades
+	WHERE
+	estado LIKE 'sc';
