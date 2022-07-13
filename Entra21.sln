@@ -35,6 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemploSQL", "ExemploSQL", 
 		ExemplosSQL\cidades_estrutura_insert.sql = ExemplosSQL\cidades_estrutura_insert.sql
 		\\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql = \\Server\c#-noturno\Joao.Martinelli\Desktop\ExemplosSQL\ExemplosSQLComandosBasicos.sql
 		..\..\ExemplosSQLComandosBasicos.sql = ..\..\ExemplosSQLComandosBasicos.sql
+		ExemplosSQL\ExemploTabelasRelacionadas.sql = ExemplosSQL\ExemploTabelasRelacionadas.sql
 		ExemplosSQL\ExercicioSQL01.sql = ExemplosSQL\ExercicioSQL01.sql
 		ExemplosSQL\ExercicioSQL02.sql = ExemplosSQL\ExercicioSQL02.sql
 		ExemplosSQL\ExercicioSQL03.sql = ExemplosSQL\ExercicioSQL03.sql
