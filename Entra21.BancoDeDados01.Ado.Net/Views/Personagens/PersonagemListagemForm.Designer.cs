@@ -1,6 +1,6 @@
-﻿namespace Entra21.BancoDeDados01.Ado.Net.Views.TiposPersonagens
+﻿namespace Entra21.BancoDeDados01.Ado.Net.Views.Personagens
 {
-    partial class TipoPersonagemListagemForm
+    partial class PersonagemListagemForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonCadastrar = new System.Windows.Forms.Button();
+            this.buttonCadasrar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonApagar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTipoPersonagem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEditora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonCadastrar
+            // buttonCadasrar
             // 
-            this.buttonCadastrar.Location = new System.Drawing.Point(694, 12);
-            this.buttonCadastrar.Name = "buttonCadastrar";
-            this.buttonCadastrar.Size = new System.Drawing.Size(94, 29);
-            this.buttonCadastrar.TabIndex = 0;
-            this.buttonCadastrar.Text = "Cadastrar";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
-            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
+            this.buttonCadasrar.Location = new System.Drawing.Point(694, 12);
+            this.buttonCadasrar.Name = "buttonCadasrar";
+            this.buttonCadasrar.Size = new System.Drawing.Size(94, 29);
+            this.buttonCadasrar.TabIndex = 0;
+            this.buttonCadasrar.Text = "Cadastrar";
+            this.buttonCadasrar.UseVisualStyleBackColor = true;
             // 
             // buttonEditar
             // 
@@ -55,7 +56,6 @@
             this.buttonEditar.TabIndex = 1;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
-            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonApagar
             // 
@@ -65,7 +65,6 @@
             this.buttonApagar.TabIndex = 2;
             this.buttonApagar.Text = "Apagar";
             this.buttonApagar.UseVisualStyleBackColor = true;
-            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // dataGridView1
             // 
@@ -73,34 +72,52 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumCodigo,
-            this.ColumnTipo});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 47);
+            this.ColumnId,
+            this.ColumnNome,
+            this.ColumnTipoPersonagem,
+            this.ColumnEditora});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 391);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 380);
             this.dataGridView1.TabIndex = 3;
             // 
-            // ColumCodigo
+            // ColumnId
             // 
-            this.ColumCodigo.HeaderText = "Código";
-            this.ColumCodigo.MinimumWidth = 6;
-            this.ColumCodigo.Name = "ColumCodigo";
-            this.ColumCodigo.ReadOnly = true;
-            this.ColumCodigo.Width = 125;
+            this.ColumnId.HeaderText = "Código";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            this.ColumnId.Width = 125;
             // 
-            // ColumnTipo
+            // ColumnNome
             // 
-            this.ColumnTipo.HeaderText = "Tipo";
-            this.ColumnTipo.MinimumWidth = 6;
-            this.ColumnTipo.Name = "ColumnTipo";
-            this.ColumnTipo.ReadOnly = true;
-            this.ColumnTipo.Width = 125;
+            this.ColumnNome.HeaderText = "Nome";
+            this.ColumnNome.MinimumWidth = 6;
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 125;
             // 
-            // TipoPersonagemListagemForm
+            // ColumnTipoPersonagem
+            // 
+            this.ColumnTipoPersonagem.HeaderText = "Tipo Personagem";
+            this.ColumnTipoPersonagem.MinimumWidth = 6;
+            this.ColumnTipoPersonagem.Name = "ColumnTipoPersonagem";
+            this.ColumnTipoPersonagem.ReadOnly = true;
+            this.ColumnTipoPersonagem.Width = 125;
+            // 
+            // ColumnEditora
+            // 
+            this.ColumnEditora.HeaderText = "Editora";
+            this.ColumnEditora.MinimumWidth = 6;
+            this.ColumnEditora.Name = "ColumnEditora";
+            this.ColumnEditora.ReadOnly = true;
+            this.ColumnEditora.Width = 125;
+            // 
+            // PersonagemListagemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,10 +125,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonApagar);
             this.Controls.Add(this.buttonEditar);
-            this.Controls.Add(this.buttonCadastrar);
-            this.Name = "TipoPersonagemListagemForm";
-            this.Text = "Tipos de Personagens";
-            this.Load += new System.EventHandler(this.TipoPersonagemListagemForm_Load);
+            this.Controls.Add(this.buttonCadasrar);
+            this.Name = "PersonagemListagemForm";
+            this.Text = "PersonagemListagemForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -119,11 +135,13 @@
 
         #endregion
 
-        private Button buttonCadastrar;
+        private Button buttonCadasrar;
         private Button buttonEditar;
         private Button buttonApagar;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ColumCodigo;
-        private DataGridViewTextBoxColumn ColumnTipo;
+        private DataGridViewTextBoxColumn ColumnId;
+        private DataGridViewTextBoxColumn ColumnNome;
+        private DataGridViewTextBoxColumn ColumnTipoPersonagem;
+        private DataGridViewTextBoxColumn ColumnEditora;
     }
 }
