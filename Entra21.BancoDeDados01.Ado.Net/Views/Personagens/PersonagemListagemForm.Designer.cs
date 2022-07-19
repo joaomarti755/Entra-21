@@ -47,6 +47,7 @@
             this.buttonCadasrar.TabIndex = 0;
             this.buttonCadasrar.Text = "Cadastrar";
             this.buttonCadasrar.UseVisualStyleBackColor = true;
+            this.buttonCadasrar.Click += new System.EventHandler(this.buttonCadasrar_Click);
             // 
             // buttonEditar
             // 
@@ -56,6 +57,7 @@
             this.buttonEditar.TabIndex = 1;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonApagar
             // 
@@ -65,6 +67,7 @@
             this.buttonApagar.TabIndex = 2;
             this.buttonApagar.Text = "Apagar";
             this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // dataGridView1
             // 
@@ -128,6 +131,7 @@
             this.Controls.Add(this.buttonCadasrar);
             this.Name = "PersonagemListagemForm";
             this.Text = "PersonagemListagemForm";
+            this.Load += new System.EventHandler(this.PersonagemListagemForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entra21.BancoDeDados01.Ado.Net.Models
 {
-    internal class Personagem
+    public class Personagem
     {
         public int Id { get; set; }
         public string Nome { get; set; }
