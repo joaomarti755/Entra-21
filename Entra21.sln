@@ -42,7 +42,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemploSQL", "ExemploSQL", 
 		ExemplosSQL\pokemons_estrutura_insert.sql = ExemplosSQL\pokemons_estrutura_insert.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.BancoDeDados01.Ado.Net", "Entra21.BancoDeDados01.Ado.Net\Entra21.BancoDeDados01.Ado.Net.csproj", "{9411F4F9-2AE2-4589-A7B3-E461F85448E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entra21.BancoDeDados01.Ado.Net", "Entra21.BancoDeDados01.Ado.Net\Entra21.BancoDeDados01.Ado.Net.csproj", "{9411F4F9-2AE2-4589-A7B3-E461F85448E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entra21.ExercicioBancoDeDados", "Entra21.ExercicioBancoDeDados\Entra21.ExercicioBancoDeDados.csproj", "{46D5871B-1765-4552-9203-B1007061620B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -106,12 +108,17 @@ Global
 		{9411F4F9-2AE2-4589-A7B3-E461F85448E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9411F4F9-2AE2-4589-A7B3-E461F85448E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9411F4F9-2AE2-4589-A7B3-E461F85448E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D5871B-1765-4552-9203-B1007061620B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D5871B-1765-4552-9203-B1007061620B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D5871B-1765-4552-9203-B1007061620B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D5871B-1765-4552-9203-B1007061620B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9411F4F9-2AE2-4589-A7B3-E461F85448E8} = {53870F59-574E-40B5-ABF7-DBB738787401}
+		{46D5871B-1765-4552-9203-B1007061620B} = {53870F59-574E-40B5-ABF7-DBB738787401}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0654976-699D-4DB5-9456-EA420FCAB375}
