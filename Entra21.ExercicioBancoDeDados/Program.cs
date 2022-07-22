@@ -1,4 +1,4 @@
-﻿using Entra21.ExercicioBancoDeDados.Views.UnidadeFederativa;
+﻿using Entra21.ExercicioBancoDeDados.Views.UnidadesFederativas;
 
 namespace Entra21.BancoDados01.Ado.Net
 {
@@ -8,7 +8,7 @@ namespace Entra21.BancoDados01.Ado.Net
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new UnidadeFederativaCadastroEdicaoForm());
+            Application.Run(new UnidadeFederativaListagemForm());
         }
     }
 }

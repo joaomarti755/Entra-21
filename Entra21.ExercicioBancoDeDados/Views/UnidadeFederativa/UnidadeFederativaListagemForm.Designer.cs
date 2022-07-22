@@ -1,4 +1,4 @@
-﻿namespace Entra21.ExercicioBancoDeDados.Views.UnidadeFederativa
+﻿namespace Entra21.ExercicioBancoDeDados.Views.UnidadesFederativas
 {
     partial class UnidadeFederativaListagemForm
     {
@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonApagar = new System.Windows.Forms.Button();
@@ -40,12 +43,35 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId,
+            this.ColumNome,
+            this.ColumnSigla});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(393, 281);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumNome
+            // 
+            this.ColumNome.HeaderText = "Nome";
+            this.ColumNome.Name = "ColumNome";
+            this.ColumNome.ReadOnly = true;
+            // 
+            // ColumnSigla
+            // 
+            this.ColumnSigla.HeaderText = "Sigla";
+            this.ColumnSigla.Name = "ColumnSigla";
+            this.ColumnSigla.ReadOnly = true;
             // 
             // buttonCadastrar
             // 
@@ -55,6 +81,7 @@
             this.buttonCadastrar.TabIndex = 1;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // buttonEditar
             // 
@@ -64,6 +91,7 @@
             this.buttonEditar.TabIndex = 2;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonApagar
             // 
@@ -73,6 +101,7 @@
             this.buttonApagar.TabIndex = 3;
             this.buttonApagar.Text = "Apagar";
             this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // UnidadeFederativaListagemForm
             // 
@@ -85,6 +114,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "UnidadeFederativaListagemForm";
             this.Text = "UnidadeFederativaListagemForm";
+            this.Load += new System.EventHandler(this.UnidadeFederativaListagemForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -96,5 +126,8 @@
         private Button buttonCadastrar;
         private Button buttonEditar;
         private Button buttonApagar;
+        private DataGridViewTextBoxColumn ColumnId;
+        private DataGridViewTextBoxColumn ColumNome;
+        private DataGridViewTextBoxColumn ColumnSigla;
     }
 }

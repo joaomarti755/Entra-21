@@ -79,12 +79,41 @@ namespace Entra21.ExercicioBancoDeDados.Services
             var unidadeFederativa = new UnidadeFederativa();
             unidadeFederativa.Id = Convert.ToInt32(primeiroRegistro["id"]);
             unidadeFederativa.Nome = primeiroRegistro["nome"].ToString();
+            unidadeFederativa.Sigla = primeiroRegistro["sigla"].ToString();
 
+            comando.Connection.Close();
+
+            return unidadeFederativa;
         }
 
         public List<UnidadeFederativa> ObterTodos()
         {
-            throw new NotImplementedException();
+            var conexao = new Conexao().Conectar();
+            var comando = conexao.CreateCommand();
+
+            comando.CommandText = "SELECT id, nome, sigla FROM unidades_federativas";
+
+            var tabelaEmMemoria = new DataTable();
+
+            tabelaEmMemoria.Load(comando.ExecuteReader());
+
+            var unidadeFederativas = new List<UnidadeFederativa>();
+
+            for (int i = 0; i < tabelaEmMemoria.Rows.Count; i++)
+            {
+                var linha = tabelaEmMemoria.Rows[i];
+
+                var unidadeFederativa = new UnidadeFederativa();
+                unidadeFederativa.Id = Convert.ToInt32(linha["id"].ToString());
+                unidadeFederativa.Nome = linha["nome"].ToString();
+                unidadeFederativa.Sigla = linha["sigla"].ToString();
+
+                unidadeFederativas.Add(unidadeFederativa);
+            }
+
+            comando.Connection.Close();
+
+            return unidadeFederativas;
         }
     }
 }
